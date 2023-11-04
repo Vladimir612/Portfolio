@@ -24,7 +24,7 @@ const Navbar = ({ sections, activeSection, setActiveSection }) => {
 
   return (
     <nav className={styles.navbar}>
-      <p className={styles.logoText}>Vlada's portfolio</p>
+      {/* <p className={styles.logoText}>Vlada's portfolio</p> */}
       <div
         className={`${
           menuOpen
@@ -86,7 +86,7 @@ const Navbar = ({ sections, activeSection, setActiveSection }) => {
             ALGORITHMS
           </button>
         </div>
-        <button
+        {/* <button
           className={`${
             activeSection === 4
               ? styles.contactBtn + " " + styles.active
@@ -98,7 +98,7 @@ const Navbar = ({ sections, activeSection, setActiveSection }) => {
           }}
         >
           CONTACT ME
-        </button>
+        </button> */}
       </div>
       <button
         className={styles.hamburgerMenu}

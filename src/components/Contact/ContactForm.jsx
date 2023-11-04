@@ -5,7 +5,7 @@ import FormWrapper from "./FormWrapper/FormWrapper"
 import InputText from "./InputText/InputText"
 import useForm from "./useForm"
 import TextArea from "./TextArea/TextArea"
-import axios from "axios"
+// import axios from "axios"
 
 const ContactForm = () => {
   const [values, handleChange, validate] = useForm()
@@ -16,20 +16,20 @@ const ContactForm = () => {
     setDisplayValidation(displayValidation + 1)
     let valid = true
     Object.keys(values).map(key => {
-      if (!values[key].valid.v) valid = false
+      if (values[key] !== "") valid = false
       return true
     })
 
     if (valid) {
       setMessageSuccess("Message successfully sent")
-      axios
-        .post("https://hireclass.herokuapp.com/api/question", {
-          email: values.email.value,
-          question: values.message.value,
-        })
-        .catch(err => {
-          console.log(err)
-        })
+      // axios
+      //   .post("https://hireclass.herokuapp.com/api/question", {
+      //     email: values.email.value,
+      //     question: values.message.value,
+      //   })
+      //   .catch(err => {
+      //     console.log(err)
+      //   })
     }
   }
 

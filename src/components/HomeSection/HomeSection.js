@@ -24,11 +24,11 @@ const HomeSection = props => {
       <div className={styles.text}>
         <h1>Hi, my name is Vladimir!</h1>
         <p>
-          I am Fullstack MERN web developer. You can always find me either
-          working on team projects, or my own. I like to spend my free time
-          doing something helpful for both me and my colleagues - I'm constantly
-          helping them with programming, as it gives them better understanding
-          of web development and it makes me a better educator.
+          I am Fullstack web developer. You can always find me either working on
+          team projects, or my own. I like to spend my free time doing something
+          helpful for both me and my colleagues - I'm constantly helping them
+          with programming, as it gives them better understanding of web
+          development and it makes me a better educator.
         </p>
         <a href={myCvPdf} target="_blank" rel="noreferrer">
           <button>CHECK OUT MY CV</button>

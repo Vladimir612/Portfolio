@@ -23,16 +23,18 @@ const Project = ({ project }) => {
         <Img fluid={image} className={styles.imgWrapper} />
         <h3>{project.title}</h3>
         <div className={styles.links}>
-          <a
-            href={project.githubLink}
-            target="_blank"
-            rel="noreferrer"
-            title="View on Github"
-          >
-            <div className={styles.iconWrapper}>
-              <AiFillGithub size={35} />
-            </div>
-          </a>
+          {project.githubLink !== "" && (
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noreferrer"
+              title="View on Github"
+            >
+              <div className={styles.iconWrapper}>
+                <AiFillGithub size={35} />
+              </div>
+            </a>
+          )}
           {project.hasDomen ? (
             <a
               href={project.link}

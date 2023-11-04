@@ -2,7 +2,7 @@
 
 .mainFooter {
   padding: 2rem 7rem 1rem 7rem;
-  background: $dark-blue-300;
+  background: $white-000;
   .top,
   .bottom {
     @include box-center;
@@ -28,7 +28,7 @@
       button {
         font-weight: 600;
         font-size: 1.2rem;
-        color: $white-000;
+        color: $dark-blue-300;
       }
     }
   }
@@ -44,7 +44,7 @@
       border-radius: 2rem;
     }
     button:first-child {
-      color: $white-000;
+      color:  $white-000;
       background: $gradient;
       box-shadow: 0px 3px 12px rgba(0, 196, 154, 0.262);
     }
@@ -57,9 +57,9 @@
     margin: auto;
     margin-top: 2rem;
     p {
-      color: $white-000;
+      color: $dark-blue-300;
       padding: 1rem 4rem 0 4rem;
-      border-top: 1px solid $white-200;
+      border-top: 1px solid $dark-blue-300;
     }
   }
 }

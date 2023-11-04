@@ -9,6 +9,7 @@ const ProjectsSection = props => {
     query getProjects {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/(markdown/projects)/" } }
+        sort: { fields: [fileAbsolutePath], order: ASC }
       ) {
         nodes {
           frontmatter {

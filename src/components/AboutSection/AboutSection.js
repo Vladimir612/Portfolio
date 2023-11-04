@@ -62,13 +62,13 @@ const AboutSection = props => {
           About me
         </CircleTitle>
         <p>
-          Currently I'm a student majoring in Informational systems and
-          technologies at the Faculty of Organizational Sciences. I also
-          completed an IT major in high school when I became interested in web.
-          In my first year of college, I got an internship and soon after, a
-          job. However, I decided to dedicate myself more to the university and
-          my own projects. Since then, I'm on a path of constantly improving as
-          a web developer.
+          I am currently a fourth-year student at the Faculty of Organizational
+          Sciences in Belgrade, majoring in Information Technology. My current
+          role is CEO and lead developer at HireClass, an innovative learning
+          platform. What I find most fascinating about the IT field is that the
+          learning never stops and it provides endless opportunities for self
+          improvement. Outside of IT, I have a deep passion for playing chess
+          and piano.
         </p>
         <div className={styles.icons}>
           <div className={styles.topRow}>

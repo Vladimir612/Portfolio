@@ -4,7 +4,7 @@ import AboutSection from "../components/AboutSection/AboutSection"
 import Navbar from "../components/Navbar/Navbar"
 import ProjectsSection from "../components/ProjectsSection/ProjectsSection"
 import Footer from "../components/Footer/Footer"
-import ContactSection from "../components/ContactSection/ContactSection"
+// import ContactSection from "../components/ContactSection/ContactSection"
 import AlgoSection from "../components/AlgoSection/AlgoSection"
 
 import VisibilitySensor from "react-visibility-sensor"
@@ -115,7 +115,7 @@ export default function Home() {
           ></div>
         </VisibilitySensor>
       </AlgoSection>
-      <ContactSection propRef={contactMeRef}>
+      {/* <ContactSection propRef={contactMeRef}>
         <VisibilitySensor
           onChange={isVisible => {
             isVisible && setActiveSection(5)
@@ -132,7 +132,7 @@ export default function Home() {
             }}
           ></div>
         </VisibilitySensor>
-      </ContactSection>
+      </ContactSection> */}
       <Footer
         sections={[
           homeRef,

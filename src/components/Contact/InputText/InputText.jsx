@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 import "./InputText.scss";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
@@ -6,21 +6,21 @@ import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 const InputText = (props) => {
   const [showPassword, setShowPassword] = useState(false);
 
-  const inputValue = props.value && props.value.value;
-  const otherInputValue =
-    props.validate && props.validate.exact && props.validate.exact.value;
+  // const inputValue = props.value && props.value.value;
+  // const otherInputValue =
+  //   props.validate && props.validate.exact && props.validate.exact.value;
 
-  useEffect(() => {
-    if (props.validate) {
-      props.handleValidate({
-        min: props.validate.min,
-        email: props.validate.email,
-        value: props.value,
-        exact: props.validate.exact,
-        name: props.name,
-      });
-    }
-  }, [inputValue, otherInputValue, props.validate.display]); // eslint-disable-line react-hooks/exhaustive-deps
+  // useEffect(() => {
+  //   if (props.validate) {
+  //     props.handleValidate({
+  //       min: props.validate.min,
+  //       email: props.validate.email,
+  //       value: props.value,
+  //       exact: props.validate.exact,
+  //       name: props.name,
+  //     });
+  //   }
+  // }, [inputValue, otherInputValue, props.validate.display]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div

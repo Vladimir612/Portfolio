@@ -1,18 +1,18 @@
-import React, { useEffect } from "react"
+import React from "react"
 import "./TextArea.scss"
 
 const TextArea = props => {
-  const inputValue = props.value && props.value.value
+  // const inputValue = props.value && props.value.value
 
-  useEffect(() => {
-    if (props.validate) {
-      props.handleValidate({
-        min: props.validate.min,
-        value: props.value,
-        name: props.name,
-      })
-    }
-  }, [inputValue, props.validate.display]) // eslint-disable-line react-hooks/exhaustive-deps
+  // useEffect(() => {
+  //   if (props.validate) {
+  //     props.handleValidate({
+  //       min: props.validate.min,
+  //       value: props.value,
+  //       name: props.name,
+  //     })
+  //   }
+  // }, [inputValue, props.validate.display]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div

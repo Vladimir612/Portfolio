@@ -126,13 +126,13 @@ const Footer = ({ sections, setActiveSection }) => {
           <a href={myCvPdf} target="_blank" rel="noreferrer">
             <button>CHECK OUT MY CV</button>
           </a>
-          <button
+          {/* <button
             onClick={() => {
               clickFunc(setActiveSection, 4, sections)
             }}
           >
             CONTACT
-          </button>
+          </button> */}
         </div>
       </div>
       <div className={styles.bottom}>
