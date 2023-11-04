@@ -1,0 +1,89 @@
+@import "../../global.scss";
+
+.mainFooter {
+  padding: 2rem 7rem 1rem 7rem;
+  background: $dark-blue-300;
+  .top,
+  .bottom {
+    @include box-center;
+  }
+  .imageWrapper {
+    height: 2rem;
+  }
+  .socialMedia {
+    width: 33%;
+    .mediaIcons {
+      width: 12rem;
+      @include box-center;
+      & > * {
+        flex-grow: 1;
+      }
+    }
+  }
+  .links {
+    width: 34%;
+    @include box-center($direction: column);
+    gap: 0.5rem;
+    .listItem {
+      button {
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: $white-000;
+      }
+    }
+  }
+  .buttons {
+    width: 33%;
+    @include box-center($direction: column);
+    gap: 1.5rem;
+    button {
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      width: 18rem;
+      padding: 0.8rem 0;
+      border-radius: 2rem;
+    }
+    button:first-child {
+      color: $white-000;
+      background: $gradient;
+      box-shadow: 0px 3px 12px rgba(0, 196, 154, 0.262);
+    }
+    button:nth-child(2) {
+      color: $light-green-100;
+      border: 2px solid $light-green-100;
+    }
+  }
+  .bottom {
+    margin: auto;
+    margin-top: 2rem;
+    p {
+      color: $white-000;
+      padding: 1rem 4rem 0 4rem;
+      border-top: 1px solid $white-200;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mainFooter {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .mainFooter {
+    padding: 3rem 0;
+    .top {
+      flex-direction: column;
+      gap: 2rem;
+      .links,
+      .socialMedia,
+      .buttons {
+        width: 100%;
+      }
+      .socialMedia {
+        @include box-center($direction: column);
+      }
+    }
+  }
+}

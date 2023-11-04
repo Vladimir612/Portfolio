@@ -1,0 +1,165 @@
+@import "../../global.scss";
+
+.aboutSection {
+  position: relative;
+  gap: 2rem;
+  min-height: 100vh;
+  padding: 0 3rem 0 0;
+  background: $light-blue-100;
+  @include box-center;
+  .circleSection1 {
+    @include circle($width: 24rem, $background: $white-200);
+    left: -6rem;
+    top: -17rem;
+  }
+  .circleSection2 {
+    @include circle($width: 7rem, $background: $dark-blue-100);
+    right: -3rem;
+    top: 5rem;
+  }
+  .circleSection3 {
+    @include circle($width: 7rem, $background: $white-300);
+    right: 40%;
+    bottom: -3rem;
+  }
+  .illustr {
+    height: 30rem;
+    @include box-center;
+    position: relative;
+  }
+  .illustr,
+  .text {
+    padding: 0 3rem;
+    width: 50vw;
+  }
+  .circle1 {
+    @include circle($width: 4rem, $background: $light-blue-200);
+    transform: translate(-11rem, 11rem);
+    z-index: 200;
+  }
+  .circle2 {
+    @include circle($width: 12rem, $background: $light-blue-400);
+    transform: translate(12rem, -12rem);
+    z-index: 200;
+  }
+  .circleIllustr {
+    overflow: hidden;
+    @include circle($width: 30rem, $background: $dark-blue-200);
+  }
+  .text {
+    color: $dark-blue-200;
+    position: relative;
+    p {
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 1.8rem;
+    }
+    p:first-of-type {
+      margin-bottom: 2rem;
+    }
+  }
+  .icons {
+    .topRow,
+    .bottomRow {
+      @include box-center;
+      & > * {
+        flex-grow: 1;
+      }
+    }
+    .imageWrapper {
+      height: 3rem;
+    }
+    .topRow {
+      margin: 3rem 0 2.5rem 0;
+    }
+    .bottomRow {
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .aboutSection {
+    .circleSection1 {
+      width: 20rem;
+      height: 20rem;
+      left: -6rem;
+      top: -14rem;
+    }
+    .text {
+      padding: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .aboutSection {
+    padding: 0;
+    .text {
+      padding-left: 0.5rem;
+      p {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+      }
+    }
+    .circle1 {
+      width: 2.5rem;
+      height: 2.5rem;
+      transform: translate(-8rem, 8rem);
+    }
+    .circle2 {
+      width: 8rem;
+      height: 8rem;
+      transform: translate(8rem, -8rem);
+    }
+    .circleIllustr {
+      width: 22rem;
+      height: 22rem;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .aboutSection {
+    flex-direction: column-reverse;
+    .circleSection1 {
+      width: 14rem;
+      height: 14rem;
+      left: -4rem;
+      top: -9rem;
+    }
+    .circleSection2 {
+      width: 5rem;
+      height: 5rem;
+      right: -2rem;
+      top: 3rem;
+    }
+    .circleSection3 {
+      width: 5rem;
+      height: 5rem;
+      right: 10%;
+    }
+    .text {
+      padding: 8rem 2rem 0 2rem;
+      width: 100%;
+    }
+    .illustr {
+      height: 17rem;
+    }
+    .circle1 {
+      width: 1.5rem;
+      height: 1.5rem;
+      transform: translate(-4rem, 4.5rem);
+    }
+    .circle2 {
+      width: 3rem;
+      height: 3rem;
+      transform: translate(4rem, -4rem);
+    }
+    .circleIllustr {
+      width: 12rem;
+      height: 12rem;
+    }
+  }
+}

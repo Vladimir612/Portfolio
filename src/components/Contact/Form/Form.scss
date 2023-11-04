@@ -1,0 +1,8 @@
+@import "../contact.module.scss";
+
+.def-form {
+  width: 100%;
+  @include box-center($direction: column);
+  gap: 0.8rem;
+  position: relative;
+}

@@ -1,0 +1,19 @@
+@import "../../global.scss";
+
+.heading {
+  position: relative;
+  margin-bottom: 2rem;
+  z-index: 40;
+  h2 {
+    font-size: 2.2rem;
+    padding-left: 0.7rem;
+    font-weight: 800;
+  }
+  .circle {
+    z-index: -5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include circle($width: 2.5rem);
+  }
+}

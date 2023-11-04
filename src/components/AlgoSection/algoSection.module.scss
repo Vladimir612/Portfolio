@@ -1,0 +1,33 @@
+@import "../../global.scss";
+
+.algoSection {
+  position: relative;
+  height: 0rem; //any value
+  min-height: 100vh;
+  padding: 5rem 7rem 3rem 7rem;
+  background: $dark-blue-200;
+  .content {
+    width: 100%;
+    height: 80%;
+    @include box-center($justify: space-between);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .algoSection {
+    height: initial;
+    .content {
+      margin-top: 4rem;
+      height: initial;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .algoSection {
+    padding: 3rem;
+    padding-top: 5rem;
+  }
+}

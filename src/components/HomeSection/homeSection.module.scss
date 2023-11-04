@@ -1,0 +1,186 @@
+@import "../../global.scss";
+
+.homeSection {
+  @include box-center;
+  gap: 4rem;
+  min-height: 100vh;
+  padding: 2rem 0 0 5rem;
+  position: relative;
+  .text {
+    width: 55vw;
+  }
+  .myImage {
+    width: 45vw;
+  }
+  .text {
+    padding: 2rem;
+    padding-right: 0;
+    z-index: 100;
+    h1 {
+      font-weight: 800;
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+      color: $light-blue-300;
+    }
+    p {
+      color: $dark-blue-300;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      margin-bottom: 3rem;
+    }
+    button {
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      color: $white-000;
+      width: 18rem;
+      padding: 0.8rem 0;
+      border-radius: 2rem;
+      background: $gradient;
+      box-shadow: 0px 3px 12px rgba(0, 196, 154, 0.262);
+    }
+  }
+  .myImage {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    @include box-center;
+    .circle1 {
+      @include circle($width: 8.5rem);
+      transform: translate(11rem, -9.5rem);
+      z-index: 300;
+    }
+    .circle2 {
+      @include circle($width: 16.5rem, $background: $dark-blue-100);
+      transform: translate(-9rem, -10rem);
+    }
+    .circle3 {
+      @include circle($width: 4.5rem, $background: $light-blue-200);
+      transform: translate(6.5rem, 12.5rem);
+      z-index: 400;
+    }
+    .circleImg {
+      position: relative;
+      @include circle($width: 28rem);
+      img {
+        @include fit-image;
+        border-radius: 50%;
+      }
+    }
+  }
+  .circleGroup {
+    @include box-center;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .homeSection {
+    .myImage {
+      .circle1 {
+        width: 7rem;
+        height: 7rem;
+        transform: translate(8rem, -6rem);
+      }
+      .circle2 {
+        width: 12rem;
+        height: 12rem;
+        transform: translate(-6rem, -7rem);
+      }
+      .circle3 {
+        width: 4rem;
+        height: 4rem;
+        transform: translate(5rem, 8.5rem);
+      }
+      .circleImg {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .homeSection {
+    .myImage {
+      .circle1 {
+        width: 5rem;
+        height: 5rem;
+        transform: translate(5rem, -4rem);
+      }
+      .circle2 {
+        width: 8rem;
+        height: 8rem;
+        transform: translate(-4rem, -5rem);
+      }
+      .circle3 {
+        width: 2.5rem;
+        height: 2.5rem;
+        transform: translate(3.5rem, 5.5rem);
+      }
+      .circleImg {
+        width: 13rem;
+        height: 13rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .homeSection {
+    padding: 3rem;
+    .text {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homeSection {
+    flex-direction: column-reverse;
+    gap: initial;
+    padding: 0 2rem;
+    .text,
+    .myImage {
+      width: 100%;
+    }
+    .text {
+      @include box-center;
+      flex-direction: column;
+      padding: initial;
+      margin-bottom: 2rem;
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+    .myImage {
+      height: 15rem;
+      margin-top: 2rem;
+      min-height: initial;
+      .circle1 {
+        transform: translate(4rem, -3rem);
+        width: 3rem;
+        height: 3rem;
+      }
+      .circle2 {
+        width: 7rem;
+        height: 7rem;
+        transform: translate(-3rem, -3rem);
+      }
+      .circle3 {
+        width: 2rem;
+        height: 2rem;
+        transform: translate(2rem, 4.5rem);
+      }
+      .circleImg {
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+  }
+}
