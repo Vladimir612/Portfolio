@@ -58,3 +58,12 @@
     }
   }
 }
+
+@media screen and (max-width: 400px) {
+  .video {
+    padding: 1rem;
+    iframe {
+      height: 12rem;
+    }
+  }
+}

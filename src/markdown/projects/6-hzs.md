@@ -1,5 +1,5 @@
 ---
-title: Hackathon
+title: HZS
 hasDomen: false
 link: ""
 githubLink: https://github.com/StefanJo3107/HZS-4.0-Site

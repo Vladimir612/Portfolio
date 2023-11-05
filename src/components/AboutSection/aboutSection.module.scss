@@ -141,7 +141,7 @@
       right: 10%;
     }
     .text {
-      padding: 8rem 2rem 0 2rem;
+      padding: 8rem 1rem 0 1rem;
       width: 100%;
     }
     .illustr {
@@ -160,6 +160,26 @@
     .circleIllustr {
       width: 12rem;
       height: 12rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .aboutSection {
+    .icons{
+      .topRow{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+      .bottomRow{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
     }
   }
 }

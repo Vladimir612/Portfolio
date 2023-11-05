@@ -87,3 +87,13 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .mainFooter {
+    .buttons {
+      button {
+        width: 15rem;
+      }
+    }
+  }
+}

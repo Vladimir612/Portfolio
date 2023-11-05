@@ -83,3 +83,12 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .project {
+    .imgWrapper {
+      width: 15rem;
+      height: 9rem;
+    }
+  }
+}

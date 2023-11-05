@@ -137,7 +137,7 @@
   .homeSection {
     flex-direction: column-reverse;
     gap: initial;
-    padding: 0 2rem;
+    padding: 0 1rem;
     .text,
     .myImage {
       width: 100%;
@@ -180,6 +180,16 @@
       .circleImg {
         width: 10rem;
         height: 10rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .homeSection {
+    .text {
+      button {
+        width: 15rem;
       }
     }
   }

@@ -91,3 +91,21 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .algoWrapper {
+    width: 15rem;
+    .imgWrapper {
+      width: 15rem;
+      height: 15rem;
+    }
+    &:hover {
+      width: 15rem;
+      height: 15rem;
+      .imgWrapper {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+  }
+}

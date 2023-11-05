@@ -52,13 +52,15 @@ const Project = ({ project }) => {
               </div>
             </a>
           ) : (
-            <button
-              className={styles.iconWrapper}
-              title="Video of the website"
-              onClick={() => setVideoVisible(true)}
-            >
-              <AiFillEye size={35} />
-            </button>
+            project.videoLink !== "" && (
+              <button
+                className={styles.iconWrapper}
+                title="Video of the website"
+                onClick={() => setVideoVisible(true)}
+              >
+                <AiFillEye size={35} />
+              </button>
+            )
           )}
         </div>
       </div>
